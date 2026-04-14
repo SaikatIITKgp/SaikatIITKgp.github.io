@@ -1,414 +1,353 @@
-<!DOCTYPE HTML>
-<!--
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Dopetrope by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computational Systems & Intelligence Laboratory</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
 
-			<!-- Header -->
-				<section id="header">
+<div class="site">
+  <div class="topbar">
+    <div class="lab-title">Computational Systems &amp; Intelligence Laboratory</div>
+    <div class="lab-subtitle">Department of Computer Science &amp; Engineering · IIT Kharagpur</div>
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('home',this)">Home</button>
+      <button class="tab" onclick="showTab('members',this)">Members</button>
+      <button class="tab" onclick="showTab('publications',this)">Publications</button>
+      <button class="tab" onclick="showTab('links',this)">Links</button>
+      <button class="tab" onclick="showTab('joinus',this)">Join Us</button>
+    </div>
+  </div>
 
-					<!-- Logo -->
-						<h1><a href="index.html">Mukherjee Lab IIT Kharagpur</a></h1>
+  <div class="content">
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li>
-									<a href="#">Members</a>
-									<ul>
-										<li><a href="#">Principal Investigator</a></li>
-										<li>
-											<a href="#">Postdocs</a>
-											<ul>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-											</ul>
-										</li>
-										<li>
-											<a href="#">PhD Students</a>
-											<ul>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-											</ul>
-										</li>
-										<li>
-											<a href="#">Masters Students</a>
-											<ul>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-											</ul>
-										</li>
-										<li>
-											<a href="#">Undergraduate Students</a>
-											<ul>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-											</ul>
-										</li>
-                                                                                <li>
-											<a href="#">Alumni</a>
-											<ul>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li><a href="publications.html">Publications</a></li>
-								<li><a href="links.html">Links</a></li>
-								<li><a href="joinus.html">Join Us</a></li>
-							</ul>
-						</nav>
+    <!-- HOME -->
+    <div class="section active" id="home">
+      <h2>Welcome to CSI Lab</h2>
+      <p>We are a research group at the intersection of <em>machine learning, distributed systems,</em> and <em>computational biology</em>. Our work focuses on building intelligent systems that are reliable, interpretable, and deployable at scale.</p>
+      <p>Our lab brings together students and researchers with diverse backgrounds to tackle fundamental questions in AI and computing. We value rigorous theory, careful experimentation, and impactful applications.</p>
+      <h2 style="margin-top:28px">News</h2>
+      <div class="news-list">
+        <div class="news-item">
+          <div class="news-date">Apr 2025</div>
+          <div class="news-body">Our paper on scalable GNNs has been accepted at <a href="#">NeurIPS 2025</a>. Congratulations to Siddharth and Priya!</div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Mar 2025</div>
+          <div class="news-body">Prof. Roy will give an invited talk at the <a href="#">International Workshop on Federated Learning</a>, Vienna.</div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Jan 2025</div>
+          <div class="news-body">We have been awarded a DST-SERB grant for our project on interpretable clinical AI. <a href="#">Read the announcement.</a></div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Nov 2024</div>
+          <div class="news-body">Rahul Chatterjee's paper was presented at <a href="#">STOC 2024</a> in Vancouver.</div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Sep 2024</div>
+          <div class="news-body">Welcome to our two new PhD students joining the lab this semester!</div>
+        </div>
+      </div>
+    </div>
 
-					<!-- Banner -->
-						<section id="banner">
-							<header>
-								<h2>Howdy. This is Dopetrope.</h2>
-								<p>A responsive template by HTML5 UP</p>
-							</header>
-						</section>
+    <!-- MEMBERS -->
+    <div class="section" id="members">
+      <h2>Lab Members</h2>
 
-					<!-- Intro -->
-						<section id="intro" class="container">
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<section class="first">
-										<i class="icon solid featured fa-cog"></i>
-										<header>
-											<h2>Ipsum consequat</h2>
-										</header>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section class="middle">
-										<i class="icon solid featured alt fa-bolt"></i>
-										<header>
-											<h2>Magna etiam dolor</h2>
-										</header>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section class="last">
-										<i class="icon solid featured alt2 fa-star"></i>
-										<header>
-											<h2>Tempus adipiscing</h2>
-										</header>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-									</section>
-								</div>
-							</div>
-							<footer>
-								<ul class="actions">
-									<li><a href="#" class="button large">Get Started</a></li>
-									<li><a href="#" class="button alt large">Learn More</a></li>
-								</ul>
-							</footer>
-						</section>
+      <div class="member-category">
+        <h3>Principal Investigator</h3>
+        <div class="pi-row">
+          <div class="member-photo pi-avatar">AR</div>
+          <div class="member-info">
+            <div class="member-name">Prof. Ananya Roy</div>
+            <div class="member-role-tag">Principal Investigator</div>
+            <div class="member-bio">Prof. Roy works on machine learning theory, distributed optimisation, and clinical AI. She received her PhD from Carnegie Mellon University and joined IIT Kharagpur in 2018. She has published over 40 papers in top-tier venues.</div>
+            <div class="member-links">
+              <a class="icon-link" href="#" title="Google Scholar">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+              </a>
+              <a class="icon-link" href="#" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a class="cv-link" href="#">CV (PDF)</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-				</section>
+      <div class="member-category">
+        <h3>Postdoctoral Researchers</h3>
+        <div class="members-grid-2">
+          <div class="member-card">
+            <div class="member-photo">DS</div>
+            <div class="member-info">
+              <div class="member-name">Dr. Deepa Sharma</div>
+              <div class="member-role-tag">Postdoc</div>
+              <div class="member-bio">Probabilistic graphical models and causal inference in healthcare applications.</div>
+              <div class="member-links">
+                <a class="icon-link" href="#" title="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a>
+                <a class="cv-link" href="#">CV (PDF)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<!-- Main -->
-				<section id="main">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
+      <div class="member-category">
+        <h3>PhD Students</h3>
+        <div class="members-grid-2">
+          <div class="member-card">
+            <div class="member-photo">SK</div>
+            <div class="member-info">
+              <div class="member-name">Siddharth Kumar</div>
+              <div class="member-role-tag">PhD Student · Year 3</div>
+              <div class="member-bio">Graph neural networks and scalable inference. BTech, IIT Bombay.</div>
+              <div class="member-links">
+                <a class="icon-link" href="#" title="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a>
+                <a class="cv-link" href="#">CV (PDF)</a>
+              </div>
+            </div>
+          </div>
+          <div class="member-card">
+            <div class="member-photo">PM</div>
+            <div class="member-info">
+              <div class="member-name">Priya Menon</div>
+              <div class="member-role-tag">PhD Student · Year 2</div>
+              <div class="member-bio">Federated learning under data heterogeneity. MSc Statistics, IISc Bangalore.</div>
+              <div class="member-links">
+                <a class="icon-link" href="#" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                <a class="cv-link" href="#">CV (PDF)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-								<!-- Portfolio -->
-									<section>
-										<header class="major">
-											<h2>My Portfolio</h2>
-										</header>
-										<div class="row">
-											<div class="col-4 col-6-medium col-12-small">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-													<header>
-														<h3>Ipsum feugiat et dolor</h3>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="#" class="button alt">Find out more</a></li>
-														</ul>
-													</footer>
-												</section>
-											</div>
-											<div class="col-4 col-6-medium col-12-small">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-													<header>
-														<h3>Sed etiam lorem nulla</h3>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="#" class="button alt">Find out more</a></li>
-														</ul>
-													</footer>
-												</section>
-											</div>
-											<div class="col-4 col-6-medium col-12-small">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-													<header>
-														<h3>Consequat et tempus</h3>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="#" class="button alt">Find out more</a></li>
-														</ul>
-													</footer>
-												</section>
-											</div>
-											<div class="col-4 col-6-medium col-12-small">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-													<header>
-														<h3>Blandit sed adipiscing</h3>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="#" class="button alt">Find out more</a></li>
-														</ul>
-													</footer>
-												</section>
-											</div>
-											<div class="col-4 col-6-medium col-12-small">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-													<header>
-														<h3>Etiam nisl consequat</h3>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="#" class="button alt">Find out more</a></li>
-														</ul>
-													</footer>
-												</section>
-											</div>
-											<div class="col-4 col-6-medium col-12-small">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
-													<header>
-														<h3>Dolore nisl feugiat</h3>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="#" class="button alt">Find out more</a></li>
-														</ul>
-													</footer>
-												</section>
-											</div>
-										</div>
-									</section>
+      <div class="member-category">
+        <h3>Masters Students</h3>
+        <div class="members-grid-2">
+          <div class="member-card">
+            <div class="member-photo">RC</div>
+            <div class="member-info">
+              <div class="member-name">Rahul Chatterjee</div>
+              <div class="member-role-tag">MS Research</div>
+              <div class="member-bio">Combinatorial optimisation and approximation algorithms for sub-modular functions.</div>
+              <div class="member-links">
+                <a class="icon-link" href="#" title="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="member-card">
+            <div class="member-photo">NB</div>
+            <div class="member-info">
+              <div class="member-name">Nandita Bose</div>
+              <div class="member-role-tag">MS Research</div>
+              <div class="member-bio">Interpretable attention-based sequence models for clinical decision support.</div>
+              <div class="member-links">
+                <a class="icon-link" href="#" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                <a class="cv-link" href="#">CV (PDF)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-							</div>
-							<div class="col-12">
+      <div class="member-category">
+        <h3>Bachelors Students</h3>
+        <div class="members-grid-2">
+          <div class="member-card">
+            <div class="member-photo">VT</div>
+            <div class="member-info">
+              <div class="member-name">Varun Tiwari</div>
+              <div class="member-role-tag">BTech Project</div>
+              <div class="member-bio">Data pipeline engineering and compute infrastructure for ongoing lab projects.</div>
+              <div class="member-links">
+                <a class="icon-link" href="#" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-								<!-- Blog -->
-									<section>
-										<header class="major">
-											<h2>The Blog</h2>
-										</header>
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-													<header>
-														<h3>Magna tempus consequat</h3>
-														<p>Posted 45 minutes ago</p>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="#" class="button icon solid fa-file-alt">Continue Reading</a></li>
-															<li><a href="#" class="button alt icon solid fa-comment">33 comments</a></li>
-														</ul>
-													</footer>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
-													<header>
-														<h3>Aptent veroeros aliquam</h3>
-														<p>Posted 45 minutes ago</p>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="#" class="button icon solid fa-file-alt">Continue Reading</a></li>
-															<li><a href="#" class="button alt icon solid fa-comment">33 comments</a></li>
-														</ul>
-													</footer>
-												</section>
-											</div>
-										</div>
-									</section>
+      <div class="member-category">
+        <h3>Lab Alumni</h3>
+        <div class="members-grid-2">
+          <div class="member-card">
+            <div class="member-photo">AK</div>
+            <div class="member-info">
+              <div class="member-name">Arjun Kapoor</div>
+              <div class="member-role-tag">PhD 2023 · Now at Google DeepMind</div>
+              <div class="member-bio">Thesis on robust optimisation under distribution shift.</div>
+              <div class="member-links">
+                <a class="icon-link" href="#" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="member-card">
+            <div class="member-photo">SJ</div>
+            <div class="member-info">
+              <div class="member-name">Sneha Joshi</div>
+              <div class="member-role-tag">MS 2022 · Now at Microsoft Research</div>
+              <div class="member-bio">Thesis on efficient transformer architectures for time-series data.</div>
+              <div class="member-links">
+                <a class="icon-link" href="#" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-							</div>
-						</div>
-					</div>
-				</section>
+    <!-- PUBLICATIONS -->
+    <div class="section" id="publications">
+      <h2>Publications (by date)</h2>
+      <div class="pub-subtabs">
+        <button class="pub-subtab active" onclick="showPubTab('journal',this)">Journal Articles</button>
+        <button class="pub-subtab" onclick="showPubTab('conferences',this)">Conferences</button>
+      </div>
+      <div class="pub-subsection active" id="journal">
+        <ol class="pub-ol">
+          <li class="pub-entry">
+            <div class="pub-img">No image</div>
+            <div class="pub-details">
+              <div class="pub-title">Scalable Graph Neural Networks for Large-Scale Distributed Inference</div>
+              <div class="pub-authors"><b>A. Roy</b>, S. Kumar, P. Menon</div>
+              <div class="pub-venue"><span class="pub-year-tag">2024</span> NeurIPS 2024 <a class="pub-doi" href="#">DOI: 10.xxxx/neurips.2024.xxxxx</a></div>
+            </div>
+          </li>
+          <li class="pub-entry">
+            <div class="pub-img">No image</div>
+            <div class="pub-details">
+              <div class="pub-title">Interpretable Attention Mechanisms in Clinical Sequence Modeling</div>
+              <div class="pub-authors">N. Bose, R. Chatterjee, <b>A. Roy</b></div>
+              <div class="pub-venue"><span class="pub-year-tag">2024</span> AAAI 2024 <a class="pub-doi" href="#">DOI: 10.xxxx/aaai.2024.xxxxx</a></div>
+            </div>
+          </li>
+          <li class="pub-entry">
+            <div class="pub-img">No image</div>
+            <div class="pub-details">
+              <div class="pub-title">Federated Learning under Heterogeneous Data Regimes</div>
+              <div class="pub-authors">P. Menon, V. Tiwari, <b>A. Roy</b></div>
+              <div class="pub-venue"><span class="pub-year-tag">2023</span> ICML 2023 <a class="pub-doi" href="#">DOI: 10.xxxx/icml.2023.xxxxx</a></div>
+            </div>
+          </li>
+          <li class="pub-entry">
+            <div class="pub-img">No image</div>
+            <div class="pub-details">
+              <div class="pub-title">Efficient Approximation Algorithms for Sub-modular Maximization</div>
+              <div class="pub-authors">R. Chatterjee, S. Kumar, <b>A. Roy</b></div>
+              <div class="pub-venue"><span class="pub-year-tag">2023</span> STOC 2023 <a class="pub-doi" href="#">DOI: 10.xxxx/stoc.2023.xxxxx</a></div>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="pub-subsection" id="conferences">
+        <ol class="pub-ol">
+          <li class="pub-entry">
+            <div class="pub-details">
+              <div class="pub-title">NeurIPS 2024 — Vancouver, Canada</div>
+              <div class="pub-authors">Attended by S. Kumar, P. Menon</div>
+              <div class="pub-venue"><span class="pub-year-tag">Dec 2024</span> Paper presentation</div>
+            </div>
+          </li>
+          <li class="pub-entry">
+            <div class="pub-details">
+              <div class="pub-title">AAAI 2024 — Vancouver, Canada</div>
+              <div class="pub-authors">Attended by N. Bose, R. Chatterjee, <b>A. Roy</b></div>
+              <div class="pub-venue"><span class="pub-year-tag">Feb 2024</span> Paper presentation + invited talk</div>
+            </div>
+          </li>
+          <li class="pub-entry">
+            <div class="pub-details">
+              <div class="pub-title">ICML 2023 — Honolulu, USA</div>
+              <div class="pub-authors">Attended by P. Menon, <b>A. Roy</b></div>
+              <div class="pub-venue"><span class="pub-year-tag">Jul 2023</span> Paper presentation</div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
 
-			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<div class="row">
-							<div class="col-8 col-12-medium">
-								<section>
-									<header>
-										<h2>Blandit nisl adipiscing</h2>
-									</header>
-									<ul class="dates">
-										<li>
-											<span class="date">Jan <strong>27</strong></span>
-											<h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
-											<p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
-										</li>
-										<li>
-											<span class="date">Jan <strong>23</strong></span>
-											<h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
-											<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
-										</li>
-										<li>
-											<span class="date">Jan <strong>15</strong></span>
-											<h3><a href="#">Magna tempus lorem feugiat</a></h3>
-											<p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
-										</li>
-										<li>
-											<span class="date">Jan <strong>12</strong></span>
-											<h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
-											<p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
-										</li>
-										<li>
-											<span class="date">Jan <strong>10</strong></span>
-											<h3><a href="#">Blandit tempus aliquam?</a></h3>
-											<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
-										</li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section>
-									<header>
-										<h2>What's this all about?</h2>
-									</header>
-									<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
-									<p>
-										This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-										<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
-										the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
-									</p>
-									<footer>
-										<ul class="actions">
-											<li><a href="#" class="button">Find out more</a></li>
-										</ul>
-									</footer>
-								</section>
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
-								<section>
-									<header>
-										<h2>Tempus consequat</h2>
-									</header>
-									<ul class="divided">
-										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
-								<section>
-									<header>
-										<h2>Ipsum et phasellus</h2>
-									</header>
-									<ul class="divided">
-										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section>
-									<header>
-										<h2>Vitae tempor lorem</h2>
-									</header>
-									<ul class="social">
-										<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-										<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-										<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-										<li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
-										<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
-									</ul>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<p>
-												Untitled Incorporated<br />
-												1234 Somewhere Road Suite<br />
-												Nashville, TN 00000-0000
-											</p>
-										</li>
-										<li>
-											<h3>Mail</h3>
-											<p><a href="#">someone@untitled.tld</a></p>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<p>(800) 000-0000</p>
-										</li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-12">
+    <!-- LINKS -->
+    <div class="section" id="links">
+      <h2>Links</h2>
+      <div class="links-section">
+        <h3>Courses</h3>
+        <ul class="course-list">
+          <li class="course-item"><a href="#">CS60045 — Theory of Computation</a></li>
+          <li class="course-item"><a href="#">CS61013 — Deep Learning</a></li>
+          <li class="course-item"><a href="#">CS60010 — Machine Learning</a></li>
+          <li class="course-item"><a href="#">CS69001 — Advanced Algorithms</a></li>
+          <li class="course-item"><a href="#">CS60003 — Algorithms for Big Data</a></li>
+        </ul>
+      </div>
+      <div class="links-section">
+        <h3>Code</h3>
+        <div class="github-row">
+          <svg viewBox="0 0 24 24" fill="#1c1c1c" width="22" height="22"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          <a href="#">github.com/yourusername</a>
+        </div>
+      </div>
+    </div>
 
-								<!-- Copyright -->
-									<div id="copyright">
-										<ul class="links">
-											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										</ul>
-									</div>
+    <!-- JOIN US -->
+    <div class="section" id="joinus">
+      <h2>Join Our Lab</h2>
+      <div class="join-category">
+        <span class="join-tag">PhD Positions</span>
+        <p>We are actively recruiting PhD students for Fall 2025. Strong candidates will have a background in mathematics, algorithms, or machine learning. Please apply through the IIT Kharagpur CSE graduate admissions portal and mention our lab in your statement of purpose.</p>
+      </div>
+      <div class="join-category">
+        <span class="join-tag">MS Research</span>
+        <p>Positions for MS by Research are available on a rolling basis. Students already enrolled at IIT Kharagpur may reach out to discuss rotation projects.</p>
+      </div>
+      <div class="join-category">
+        <span class="join-tag">Internships &amp; Visiting</span>
+        <p>We occasionally host undergraduate interns and visiting researchers. Email the PI with your CV, a brief description of your research interests, and potential project ideas.</p>
+      </div>
+    </div>
 
-							</div>
-						</div>
-					</div>
-				</section>
+  </div>
 
-		</div>
+  <div class="footer">
+    <div class="footer-col">
+      <h4>Address</h4>
+      <p>CSI Laboratory, Room 307<br>Department of Computer Science<br>&amp; Engineering, IIT Kharagpur<br>Kharagpur, West Bengal — 721 302</p>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Prof. Ananya Roy (PI)<br><a href="#">ananya@cse.iitkgp.ac.in</a><br>+91-3222-28XXXX</p>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-col">
+      <h4>Lab Email</h4>
+      <p><a href="#">csilab@cse.iitkgp.ac.in</a></p>
+      <h4 style="margin-top:12px">Office Hours</h4>
+      <p>Mon–Fri, 10:00–17:00 IST</p>
+    </div>
+  </div>
+</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<script>
+  function showTab(id, el) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    el.classList.add('active');
+  }
+  function showPubTab(id, el) {
+    document.querySelectorAll('.pub-subsection').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.pub-subtab').forEach(t => t.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    el.classList.add('active');
+  }
+</script>
 
-	</body>
+</body>
 </html>
